@@ -1,5 +1,3 @@
-Sure, here is an example of a README file for a GitHub repository:
-
 # Wordpress Custom Code
 
 WordPress is a content management system (CMS) that powers millions of websites worldwide. 
