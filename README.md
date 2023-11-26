@@ -43,10 +43,6 @@ To use My Awesome Project, follow these steps:
 
 1. Once you insert the code into your WordPress website, it will start working and carrying out its designated operations
 
-```bash
-npm start
-```
-
 2. Visit [https://www.wordpress.org] to know more.
 
 ## Features
