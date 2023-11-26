@@ -52,11 +52,11 @@ To use My Awesome Project, follow these steps:
 
 ## Contributing
 
-If you would like to contribute to My Awesome Project, please read the CONTRIBUTING.md: CONTRIBUTING.md file.
+If you would like to contribute to the project, please read the CONTRIBUTING.md: CONTRIBUTING.md file.
 
 ## License
 
-My Awesome Project is licensed under the [MIT License] license.
+This project is licensed under the [MIT License] license.
 
 ## Contact
 
