@@ -39,7 +39,7 @@ This is a good method for adding complex code or code that needs to interact wit
 
 ## Usage
 
-To use My Awesome Project, follow these steps:
+To use the project, follow these steps:
 
 1. Once you insert the code into your WordPress website, it will start working and carrying out its designated operations
 
