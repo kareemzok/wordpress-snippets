@@ -102,3 +102,68 @@ function custom_breadcrumb()
 
 
 add_shortcode('kareem-custom-breadcrumb', 'custom_breadcrumb');
+
+
+/*
+*
+*Below are snippet for woo commerce plugins 
+*
+*
+*/
+
+/*
+* Show msg based on billing and shipping countries instead or with order button
+* Feel free to customize the code to suits your needs
+*/
+
+add_filter( 'woocommerce_order_button_html', '_woo_hide_place_order_button' );
+
+function _woo_hide_place_order_button( $button_html ) {
+	
+	  $button_html = '
+		<button type="submit" class="button alt wp-element-button" name="woocommerce_checkout_place_order" id="place_order" value="Place order" data-value="Place order">Place order</button>
+		';
+
+    if ((WC()->customer->billing_country == 'LB' &&  WC()->customer->shipping_country == 'LB' ) || WC()->customer->shipping_country == 'LB' ) {
+          return $button_html;
+    }else{
+		
+		$button_html='<div class="shipping-notice woocommerce-info" >any message can be displayed insead of the place button</div>';
+	}
+    return $button_html;
+}
+
+/**
+ * Remove tabs from you ecommerce  (in our case seller tab)
+ * Feel free to customize the code to suits your needs
+ */
+add_filter( 'woocommerce_product_tabs', '_woo_remove_product_tabs', 98 );
+
+function _woo_remove_product_tabs( $tabs ) {
+
+    unset( $tabs['seller'] );      	// Remove the seller tab
+
+    return $tabs;
+}
+
+/**
+* Function for `woocommerce_created_customer` action-hook.
+* Process logic code after user creation
+* below example of adding a record in a custom table for the user 
+
+*/
+function _wooc_user_creation($customer_id) {
+
+$data = array(
+	'user_id' => $customer_id,
+	'email' => $email,
+	'custom_phone' => $phone_number,
+	'logging' => $response,
+
+);
+
+$inserted = $wpdb->insert($wpdb->prefix . 'my_table', $data);
+		
+}
+	
+add_action('user_register', '_wooc_user_creation');
