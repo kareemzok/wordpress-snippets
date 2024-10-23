@@ -1,7 +1,7 @@
 CONTRIBUTING.md
 
-## Contributing to My Awesome Plugin
-Thank you for your interest in contributing to Custom code! We welcome contributions from anyone who wants to help make the plugin better.
+## Contributing to my wordpress snippet repo
+Thank you for your interest in contributing to Custom code! We welcome contributions from anyone who wants to help make the plugin or theme better.
 
 ## How to Contribute
 There are a few ways you can contribute to the custom code:
@@ -12,7 +12,7 @@ There are a few ways you can contribute to the custom code:
 
 3. Fix bugs: If you know how to fix a bug in the project, please submit a pull request to us on GitHub.
 
-4. Add new features: If you know how to add a new feature to the project, please submit a pull request to us on GitHub.
+4. Add new features (snippet): If you know how to add a new feature to the project, please submit a pull request to us on GitHub.
 
 ## Coding Style
 We follow the WordPress coding standards. Please make sure your code follows these standards when submitting pull requests.
@@ -30,6 +30,6 @@ When submitting a pull request, please make sure your pull request is small and 
 The code is licensed under the GPLv2 license.
 
 ## Contact
-If you have any questions, please feel free to contact us on the GitHub issue tracker.
+If you have any questions, please feel free to contact me on the GitHub issue tracker.
 
 
